@@ -33,8 +33,17 @@ The app will now open in a new browser window, or you can navigate to it at [loc
 The aim of the game is to guess the randomly generated word before the final image is displayed.
 
 * To start, click the green "New Game" button.
-* You can hide the instructions by pressing the "Hide Help" button. 
-* Click the "Help" button at any point to read the instructions again.
+* You can hide the instructions by pressing the "Hide Help" button in the top right hand corner. Click the button at any point to read the instructions again.
+* You now have a row of underscores and a keyboard. Each underscore represents a letter in the unknown word.
+* Guess a letter by clicking on a letter in the keyboard. 
+* If your guess is correct, the key will turn green and the letter will take the place of one or more underscores.
+* If you guess incorrectly, the key will turn red, and an image will appear above the word/underscores.
+* You can have up to ten incorrect guesses, each shown by the image changing.
+* You win if you fill in all the letters.
+* You lose if you still have unknown letters remaining when the final image is shown.
+* The results bar will tell you the unknown word if you lose!
+* When the game is over, click the "New Game" button to start another. You can start a new game at any point.
+* Enjoy!
 
 
 
