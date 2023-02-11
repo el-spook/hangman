@@ -10,6 +10,7 @@ It allows the user to play the classic hangman game online.
 ## Contents
 * Installation
 * How to Play
+* Visual Instructions
 * Credits
 
 
@@ -45,8 +46,25 @@ The aim of the game is to guess the randomly generated word before the final ima
 * When the game is over, click the "New Game" button to start another. You can start a new game at any point.
 * Enjoy!
 
+## Visual Instructions
 
+* The start screen: click the green "New Game" button and press the "Hide Help" button to hide the instructions.
+![The start screen](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152743001-GETDT2YQOPZPF7WD6UL9/start-screen.png?format=1000w)
 
+* The new game screen: the unknown word is represented by the underscores.
+![The new game screen](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152733128-VI0BSA57YJBFPMYD3764/new-game.png?format=2500w)
+
+* Guess a letter: if you guess correctly, the key will turn green and the letter will replace the underscore(s).
+![Guess correctly](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152738496-13UY9RO5DOZRARJT4Q9G/correct-guess.png?format=2500w)
+
+* Incorrect guess: otherwise, the key will turn red and the image will change.
+![Guess incorrectly](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152740934-74XP0CN7F29CX1TYYVK0/red-letter.png?format=2500w)
+
+* Winning conditions: if you guess every letter in the word, you win! The black bar will tell you so.
+![You win](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152692472-ME28686TJK0UWO3RNYBJ/image-asset.png?format=2500w)
+
+* Losing conditions: if you don't guess every letter in the word before the image reaches this sad point, you lose. 
+![You lose](https://images.squarespace-cdn.com/content/v1/5e0dc9494d4c716d3ff361ec/1676152736173-38ECPO7OHR5UIAUO40RG/you-lose.png?format=2500w)
 
 ## Credits
 
