@@ -82,7 +82,7 @@ const Body = () => {
             // Call the disableButton function:                               
             disableButtons();
         }
-    }, [correctLetter]);
+    });
 
     // Get the result from the store so the right message can be displayed:
     const result = useSelector((state) => state.word.result);
