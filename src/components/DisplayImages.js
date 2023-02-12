@@ -2,6 +2,8 @@
 import { useSelector, useDispatch } from "react-redux";
 // Import the setResult reducer:
 import { setResult } from "../store/wordSlice";
+// Import the useEffect hook:
+import { useEffect } from "react";
 
 // Import all the images representing showing the different stages:
 import state1 from '../images/state1.GIF'
@@ -62,9 +64,7 @@ const DisplayImages = ({ disableButtons }) => {
                 break;
             case 10:
                 img.src = state11;
-                // As the game is over (and the user has lost), update the store with the result:
-                dispatch(setResult(0));           
-                // and call the function that stops the keyboard working:
+                // As the game is over (and the user has lost), call the function that stops the keyboard working:
                 disableButtons();              
                 break;
             default:
@@ -72,6 +72,13 @@ const DisplayImages = ({ disableButtons }) => {
                 break;
         }
     }
+    // Update the store with the result if the user has had 10 guesses:
+    useEffect(() => {
+        if (count === 10) {
+            dispatch(setResult(0));
+        }
+    }, [count, dispatch]);
+    
     // The component returns a div with the image that matches the number of incorrect guesses:
     return (
         <div>
