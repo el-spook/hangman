@@ -74,13 +74,15 @@ const Body = () => {
     If the real character is in the correctLetter array, display it instead: */
     const guessWord = word.split('').map(char => correctLetter.includes(char) ? char : '_').join(" ");
 
-    // If the word has been generated and includes no underscores, the user has won:
-    if ((!(guessWord.includes("_"))) && (word !== '')) {
-        // Tell the store the result, which will update the message:
-        dispatch(setResult(1));   
-        // Call the disableButton function:                               
-        disableButtons();
-    }
+    useEffect(() => {
+        // If the word has been generated and includes no underscores, the user has won:
+        if ((!(guessWord.includes("_"))) && (word !== '')) {
+            // Tell the store the result, which will update the message:
+            dispatch(setResult(1));   
+            // Call the disableButton function:                               
+            disableButtons();
+        }
+    }, [correctLetter]);
 
     // Get the result from the store so the right message can be displayed:
     const result = useSelector((state) => state.word.result);
