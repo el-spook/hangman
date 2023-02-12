@@ -2,7 +2,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { getNewWord, increaseCount, initialiseCount, setResult } from "../store/wordSlice";
 // Import the useState hook and the two components used in this component:
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Keyboard from "./Keyboard";
 import DisplayImages from "./DisplayImages";
 
