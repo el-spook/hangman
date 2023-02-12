@@ -1,7 +1,7 @@
 // Import the useSelector and useDispatch hooks and all the reducers:
 import { useSelector, useDispatch } from "react-redux";
 import { getNewWord, increaseCount, initialiseCount, setResult } from "../store/wordSlice";
-// Import the useState hook and the two components used in this component:
+// Import the useState and useEffect hooks and the two components used in this component:
 import { useState, useEffect } from 'react';
 import Keyboard from "./Keyboard";
 import DisplayImages from "./DisplayImages";
@@ -73,7 +73,7 @@ const Body = () => {
     /* Split the random word into characters, and change them to underscores. 
     If the real character is in the correctLetter array, display it instead: */
     const guessWord = word.split('').map(char => correctLetter.includes(char) ? char : '_').join(" ");
-
+    
     useEffect(() => {
         // If the word has been generated and includes no underscores, the user has won:
         if ((!(guessWord.includes("_"))) && (word !== '')) {
